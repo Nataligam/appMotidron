@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhotoSelectionActivity"
+    tools:ignore="Deprecated">
+
+    <ImageView
+        android:id="@+id/imageTaken"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_marginTop="20px"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Button
+        android:id="@+id/takePic"
+        android:layout_width="410px"
+        android:layout_height="130px"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border"
+        android:text="@string/takepic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageTaken" />
+
+
+    <Button
+        android:id="@+id/select"
+        android:text="@string/select"
+        android:layout_width="410px"
+        android:layout_height="130px"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/takePic"/>
+
+    <Button
+        android:id="@+id/analizar"
+        android:text="@string/analizar"
+        android:layout_width="410px"
+        android:layout_height="130px"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select"
+        android:visibility="gone"/>
+
+
+</android.support.constraint.ConstraintLayout>
+

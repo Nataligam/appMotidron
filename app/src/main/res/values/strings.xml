@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Motidron</string>
+    <string name="gcv">Google Cloud Vision</string>
+    <string name="ibm">IBM Watson</string>
+    <string name="seleccion">Selecciona un servicio de nube pública</string>
+    <string name="takepic">Tomar foto</string>
+    <string name="analizar">Analizar imágen</string>
+    <string name="otro">Otra nube publica</string>
+    <string name="select">Seleccionar Imágen</string>
+    <string name="save">Guardar</string>
+</resources>

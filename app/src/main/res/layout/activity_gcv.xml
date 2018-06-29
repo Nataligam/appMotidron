@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GCVActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_marginTop="20px"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:textAlignment="center"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/latitud"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info"
+        android:textAlignment="center"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/longitud"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/latitud"
+        android:textAlignment="center"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="410px"
+        android:layout_height="130px"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border"
+        android:text="@string/save"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/longitud"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>

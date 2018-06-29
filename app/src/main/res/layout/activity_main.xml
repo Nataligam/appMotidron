@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:ignore="Deprecated">
+
+
+    <ImageButton
+        android:id="@+id/botonGCV"
+        android:background="@drawable/image_border"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/googlecloudvisionocr"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botonIBM"
+        android:background="@drawable/image_border"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ibm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botonGCV" />
+
+    <ImageButton
+        android:id="@+id/botonAWS"
+        android:background="@drawable/image_border"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/aws"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botonIBM" />
+
+    <ImageButton
+        android:id="@+id/botonAzure"
+        android:background="@drawable/image_border"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/indice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botonAWS" />
+
+
+</android.support.constraint.ConstraintLayout>
